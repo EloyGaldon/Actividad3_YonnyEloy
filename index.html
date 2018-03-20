@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Singel Page</title>
+    <title>Actividad3</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/jbox/Source/jBox.css">
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
 </head>
 <body>
 <header class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
 
-        <a class="navbar-brand" href="#"><img src="assets/images/iconoweb2.png"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
+        <a class="navbar-brand" href="/"><img src="assets/images/iconoweb2.png"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +32,16 @@
                     <a class="nav-link" href="#somos">Quién somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#dondeEstamos" id="enlaceEstamos">Donde Estamos</a>
+                    <a class="nav-link" href="#dondeEstamos" id="dondeEstamos">Donde Estamos</a>
                 </li>
+                <div class="logReg1">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary" href="/public/iniciarsesion.html"><i class="fas fa-user"></i>Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary boton-registro" href="/public/registro.html"><i class="fas fa-sign-in-alt"></i>Registrarse</a>
+                    </li>
+                </div>
             </ul>
         </div>
         <div id="redesSocial">
@@ -43,8 +54,18 @@
                 <li><a href="#" class="badge badge-pill badge-danger"><i class="fab fa-youtube fa-2x"></i></a></li>
             </ul>
         </div>
-
+        <div class="logReg2">
+                <ul>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary" href="/public/iniciarsesion.html"><i class="fas fa-user"></i>Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary boton-registro" href="/public/registro.html"><i class="fas fa-sign-in-alt"></i>Registrarse</a>
+                    </li>
+                </ul>
+        </div>
     </nav>
+
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -95,188 +116,148 @@
 <section>
     <div id="destinos">
         <div class="container-fluid contenedor-destinos">
-            <p class="ultimahora">¡Ultima Hora!</p>
-            <div class="row fila-destinos d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
+            <div class="row fila-destinos d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
                 <div class="col-md-6 col-lg-4 col-xl-4 columna-ultimahora">
-                    <a href="#" title="Destino Malta">
                         <div class="d-flex flex-column destino">
                             <div class="destino-malta"></div>
                             <div class=""><h4>Malta al completo</h4></div>
                             <div class=""><strong>Estancia</strong></div>
-                            <div class=""><span
-                                    class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"><span
-                                    class="expira"></span><span class="precio">desde<strong>799€</strong><a href="#"
-                                                                                                            class="btn btn-warning">RESERVAR</a></span>
+                            <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
+                            <div class="p-3 align-items-center justify-content-end reservar">
+                                <span class="precio">desde<strong>799€</strong><a href="#destinos" class="btn btn-warning ">RESERVAR</a></span>
                             </div>
                         </div>
-                    </a>
+
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4 columna-ultimahora">
-                    <a href="#" title="Destino London">
+
                         <div class="d-flex flex-column destino">
                             <div class="destino-london"></div>
                             <div class=""><h4>London visita guiada</h4></div>
                             <div class=""><strong>Estancia y Vuelo</strong></div>
-                            <div class=""><span
-                                    class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"><span
-                                    class="expira"></span><span class="precio">desde<strong>500€</strong><a href="#"
-                                                                                                            class="btn btn-warning">RESERVAR</a></span>
+                            <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
+                            <div class="p-3 align-items-center justify-content-end reservar">
+                                <span class="precio">desde<strong>500€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4 columna-ultimahora">
-                    <a href="#" title="Destino Dublin">
                         <div class="d-flex flex-column destino">
                             <div class="destino-dublin"></div>
                             <div class=""><h4>Conoce los mejores lugares de Dublin</h4></div>
                             <div class=""><strong>Visita guiada</strong></div>
-                            <div class=""><span
-                                    class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"><span
-                                    class="expira"></span><span class="precio">desde<strong>720€</strong><a href="#"
-                                                                                                            class="btn btn-warning">RESERVAR</a></span>
+                            <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
+                            <div class="p-3 align-items-center justify-content-end reservar">
+                                <span class="precio">desde<strong>720€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span>
                             </div>
                         </div>
-                    </a>
                 </div>
             </div>
-            <div class="row fila-destinos d-none d-sm-none d-md-flex d-lg-flex d-xl-flex ">
+            <div class="row fila-destinos d-none d-sm-none d-md-none d-lg-flex d-xl-flex ">
                 <div class="col-md-6 col-lg-4 col-xl-4 columna-ultimahora">
-                    <a href="#" title="Destino Paris">
                         <div class="d-flex flex-column destino">
                             <div class="destino-paris"></div>
                             <div class=""><h4>Paris , la cuidad bella de Francia</h4></div>
                             <div class=""><strong>Estancia + Vuelo</strong></div>
-                            <div class=""><span
-                                    class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"><span
-                                    class="expira"></span><span class="precio">desde<strong>1175€</strong><a href="#"
-                                                                                                             class="btn btn-warning">RESERVAR</a></span>
+                            <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
+                            <div class="p-3 align-items-center justify-content-end reservar">
+                                <span class="precio">desde<strong>1175€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4 columna-ultimahora">
-                    <a href="#" title="Destino Amsterdam">
                         <div class="d-flex flex-column destino">
                             <div class="destino-amsterdam"></div>
-                            <div class=""><h4>¿Quieres conocer Amsterdam? Reserva hoy!</h4></div>
+                            <div class=""><h4>¿Quieres conocer Amsterdam?</h4></div>
                             <div class=""><strong>Estancia</strong></div>
-                            <div class=""><span
-                                    class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"><span
-                                    class="expira"></span><span class="precio">desde<strong>820€</strong><a href="#"
-                                                                                                            class="btn btn-warning">RESERVAR</a></span>
+                            <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
+                            <div class="p-3 align-items-center justify-content-end reservar">
+                                <span class="precio">desde<strong>820€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span>
                             </div>
                         </div>
-                    </a>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4 columna-ultimahora">
-                    <a href="#" title="Destino Roma">
                         <div class="d-flex flex-column destino">
                             <div class="destino-rome"></div>
                             <div class=""><h4>Italia , el pais de la comida</h4></div>
                             <div class=""><strong>Estancia</strong></div>
                             <div class=""><span
                                     class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"><span
-                                    class="expira"></span><span class="precio">desde<strong>777€</strong><a href="#"
-                                                                                                            class="btn btn-warning">RESERVAR</a></span>
+                            <div class="p-3 align-items-center justify-content-end reservar">
+                                <span class="precio">desde<strong>777€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span>
                             </div>
                         </div>
-                    </a>
                 </div>
             </div>
-            <div class="row fila-destinos d-flex d-sm-flex d-md-none d-lg-none d-xl-none">
+            <div class="row fila-destinos d-flex d-sm-flex d-md-flex d-lg-none d-xl-none">
                 <div class="col-12">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="#" title="Destino Malta">
                                     <div class="d-flex flex-column destino">
                                         <div class="destino-malta"></div>
                                         <div class=""><h4>Malta al completo</h4></div>
                                         <div class=""><strong>Estancia</strong></div>
                                         <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span>
                                         </div>
-                                        <div class="p-3 align-items-center justify-content-end reservar"><span
-                                                class="expira"></span><span class="precio">desde<strong>799€</strong><a
-                                                href="#" class="btn btn-warning">RESERVAR</a></span></div>
+                                        <div class="p-3 align-items-center justify-content-end reservar">
+                                            <span class="precio">desde<strong>799€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span></div>
                                     </div>
-                                </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#" title="Destino London">
                                     <div class="d-flex flex-column destino">
                                         <div class="destino-london"></div>
                                         <div class=""><h4>London visita guiada</h4></div>
                                         <div class=""><strong>Estancia y Vuelo</strong></div>
                                         <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span>
                                         </div>
-                                        <div class="p-3 align-items-center justify-content-end reservar"><span
-                                                class="expira"></span><span class="precio">desde<strong>500€</strong><a
-                                                href="#" class="btn btn-warning">RESERVAR</a></span></div>
+                                        <div class="p-3 align-items-center justify-content-end reservar">
+                                            <span class="precio">desde<strong>500€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span></div>
                                     </div>
-                                </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#" title="Destino Dublin">
                                     <div class="d-flex flex-column destino">
                                         <div class="destino-dublin"></div>
                                         <div class=""><h4>Conoce la ciudad de Dublin</h4></div>
                                         <div class=""><strong>Visita guiada</strong></div>
                                         <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span>
                                         </div>
-                                        <div class="p-3 align-items-center justify-content-end reservar"><span
-                                                class="expira"></span><span class="precio">desde<strong>720€</strong><a
-                                                href="#" class="btn btn-warning">RESERVAR</a></span></div>
+                                        <div class="p-3 align-items-center justify-content-end reservar">
+                                            </span><span class="precio">desde<strong>720€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span></div>
                                     </div>
-                                </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#" title="Destino Paris">
                                     <div class="d-flex flex-column destino">
                                         <div class="destino-paris"></div>
                                         <div class=""><h4>Paris , la cuidad bella de Francia</h4></div>
                                         <div class=""><strong>Estancia + Vuelo</strong></div>
                                         <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span>
                                         </div>
-                                        <div class="p-3 align-items-center justify-content-end reservar"><span
-                                                class="expira"></span><span class="precio">desde<strong>1175€</strong><a
-                                                href="#" class="btn btn-warning">RESERVAR</a></span></div>
+                                        <div class="p-3 align-items-center justify-content-end reservar">
+                                            <span class="precio">desde<strong>1175€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span></div>
                                     </div>
-                                </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#" title="Destino Amsterdam">
                                     <div class="d-flex flex-column destino">
                                         <div class="destino-amsterdam"></div>
                                         <div class=""><h4>¿Quieres conocer Amsterdam?</h4></div>
                                         <div class=""><strong>Estancia</strong></div>
                                         <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span>
                                         </div>
-                                        <div class="p-3 align-items-center justify-content-end reservar"><span
-                                                class="expira"></span><span class="precio">desde<strong>820€</strong><a
-                                                href="#" class="btn btn-warning">RESERVAR</a></span></div>
+                                        <div class="p-3 align-items-center justify-content-end reservar">
+                                            <span class="precio">desde<strong>820€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span></div>
                                     </div>
-                                </a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#" title="Destino Roma">
                                     <div class="d-flex flex-column destino">
                                         <div class="destino-rome"></div>
                                         <div class=""><h4>Italia , el pais de la comida</h4></div>
                                         <div class=""><strong>Estancia</strong></div>
                                         <div class=""><span class="descripcion">Vuelo + Alojamiento + 4 Desayunos + Guía Turistica</span>
                                         </div>
-                                        <div class="p-3 align-items-center justify-content-end reservar"><span
-                                                class="expira"></span><span class="precio">desde<strong>777€</strong><a
-                                                href="#" class="btn btn-warning">RESERVAR</a></span></div>
+                                        <div class="p-3 align-items-center justify-content-end reservar">
+                                            <span class="precio">desde<strong>777€</strong><a href="#destinos" class="btn btn-warning">RESERVAR</a></span></div>
                                     </div>
-                                </a>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -292,154 +273,66 @@
                     </div>
                 </div>
             </div>
-            <p class="proximos">Proximos</p>
-            <div class="row d-flex fila-destinos">
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 columna-proximo">
-                    <a href="#" title="Destino Azores">
-                        <div class="d-flex flex-column destino">
-                            <div class="destino-azores"></div>
-                            <div class=""><h4>Azores,Isla de Terceira</h4></div>
-                            <div class=""><strong>Vuelo + Alijamiento + traslado</strong></div>
-                            <div class=""><span class="descripcion">8 dias - 7 noches</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"></span><span
-                                    class="precio">desde<strong>995€</strong><a href="#" class="btn btn-warning">RESERVAR</a></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 columna-proximo">
-                    <a href="#" title="Destino Tenerife">
-                        <div class="d-flex flex-column destino">
-                            <div class="destino-tenerife"></div>
-                            <div class=""><h4>La isla de Tenerife</h4></div>
-                            <div class=""><strong>Estancia</strong></div>
-                            <div class=""><span class="descripcion">Vuelo + Alojamiento + Todo Incluido</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"></span><span
-                                    class="precio">desde<strong>859€</strong><a href="#" class="btn btn-warning">RESERVAR</a></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 columna-proximo">
-                    <a href="#" title="Destino Nueva York">
-                        <div class="d-flex flex-column destino">
-                            <div class="destino-nuevayork"></div>
-                            <div class=""><h4>Nueva York: Vuelo + Hotel</h4></div>
-                            <div class=""><strong>Estancia</strong></div>
-                            <div class=""><span
-                                    class="descripcion">Vuelo + Estancia 9 noches en Hotel de 5 estrellas</span></div>
-                            <div class="p-3 align-items-center justify-content-end reservar"></span><span
-                                    class="precio">desde<strong>1100€</strong><a href="#" class="btn btn-warning">RESERVAR</a></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 <section id="somos">
-    <div class="row">
-        <div class="col-md-4 offset-md-1 col-10 offset-1 quiSom">
-            <h2><b>QUIEN SOMOS</b></h2>
-            <p>GeeksHub Travel es una agencia de viajes online creada en 2009 por un equipo de viajeros entusiastas que
-                decideb hacer de su pasión por conocer el mundo un modo de vida.Desde nuestros inicios hemos diseñado
-                más de 500 viajes organizados a diferentes destinos de Europa, Norteamerica y Asia.Nuestro objetivo
-                ahora es ir ampliando horizontes poco a poco</p>
-            <a href="#" class="btn btn-primary btn-lg">Descubrir</a>
-        </div>
-    </div>
+
 
 </section>
 <section>
-    <div id="dondeEstamos">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 offset-md-1">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.450235040021!2d-0.35812868463229974!3d39.48174697948477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604898947abad3%3A0x5aae0e0b7fa0358a!2sGeeksHubs+Space+Valencia!5e0!3m2!1ses-419!2ses!4v1520767907283"
-                            width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-4 offset-md-1">
-                    
-                </div>
+    <div class="wrapper-contacto">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.7225968345203!2d-0.3570209322480286!3d39.48186084048991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604898947abad3%3A0x5aae0e0b7fa0358a!2sGeeksHubs+Space+Valencia!5e0!3m2!1ses-419!2ses!4v1521586091457" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 offset-1 ">
+                <p>E: inquiry@artiotravel.com</p>
+
+                <p>P: 0264 123 4567</p>
+
+                <p>Llámanos o visítanos con tus preguntas, estamos dispuestos y disponibles a responder
+                    cualquier pregunta en 24 horas durante días laborales.</p>
+                <hr class="hr-contact"/>
+                <form class="form-contact">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Telefono">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputCountry" placeholder="Pais">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea class="form-control" id="inputTextarea" rows="3"></textarea>
+                        </div>
+                        </div>
+                    <button type="submit" class="btn btn-warning btn-lg submit">Enviar Formulario</button>
+                </form>
+
             </div>
         </div>
     </div>
+
 </section>
 
+
 <footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 offset-md-1" id="ayuda">
 
-                <h5>¿ NECESITAS AYUDA ?</h5>
-                <br>
-                <h6>0264 123 4567</h6>
-                <h6>enquiry@geekshubtravels.com</h6>
-                <br>
-                <p>Lun-Vie: 9:30-19:00 Sab:10:00-14:00</p>
-            </div>
-
-            <div class="col-md-3 offset-md-1" id="informacion">
-
-                <h5>INFORMACIÓN</h5>
-                <ul>
-                    <li><a href="#"> Quienes somos</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">Condiciones generales</a></li>
-                    <li><a href="#">Aviso legal</a></li>
-                    <li><a href="#">contacto</a></li>
-                    <li><a href="#">Programa de puntos</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-3 offset-md-1" id="newsletter">
-                <form action="#">
-                    <fieldset>
-                        <h5>SUSCRIBETE A LA NEWSLETTER</h5>
-                        <br>
-                        <input type="email" id="email" placeholder="Correo electronico"><br>
-                        <br>
-                        <input type="button" class="btn btn-warning btn-lg" value="SUSCRIBETE">
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-
-        <hr/>
-        <div id="redesSocial2">
-            <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li><a href="#" class="badge badge-pill badge-primary"><i class="fab fa-twitter fa-2x"></i></a>
-                        </li>
-                        <li><a href="#" class="badge badge-pill badge-success"><i class="fab fa-whatsapp fa-2x"></i></a>
-                        </li>
-                        <li><a href="#" class="badge badge-pill badge-primary"><i
-                                class="fab fa-facebook-f fa-2x"></i></a></li>
-                        <li><a href="#" class="badge badge-pill badge-info"><i class="fab fa-instagram fa-2x"></i></a>
-                        </li>
-                        <li><a href="#" class="badge badge-pill badge-primary"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                        </li>
-                        <li><a href="#" class="badge badge-pill badge-danger"><i class="fab fa-youtube fa-2x"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr style="clear: both">
-        </div>
-        <div class="row" id="pie">
-            <div class="col-md-6 offset-md-3">
-                <p> GeeksHubs Travels 2018 Todos los derechos reservados</p>
-            </div>
-        </div>
-
-    </div>
 </footer>
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="node_modules/jbox/Source/jBox.min.js"></script>
 <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
