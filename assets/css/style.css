@@ -88,7 +88,7 @@ header{
     height: 100%;
 }
 #carousel1{
-    background-image: url("../images/verano.jpg");
+    background-image: url("../images/invierno.jpg");
     background-position: center center;
     background-size: cover;
     padding-bottom: 3em;
@@ -102,7 +102,7 @@ header{
     height: 100%;
 }
 #carousel3{
-    background-image: url("../images/invierno.jpg");
+    background-image: url("../images/verano.jpg");
     background-position: center center;
     background-size: cover;
     padding-bottom: 3em;
@@ -283,10 +283,20 @@ header{
 
 /* Apartado MAPA*/
 
-.wrapper-contacto{
+.formulario{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.mapa:hover, .formulario:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.wrapper-contacto {
     font-family: 'Teko', sans-serif;
     padding-top: 3%;
     padding-bottom: 3%;
+
 }
 
 .form-contact .row{
@@ -301,7 +311,7 @@ header{
 }
 
 .submit{
-    float: right;
+    /*float: right;*/
     margin-top: 2%;
 }
 
@@ -313,6 +323,85 @@ header{
 
 /* FIN FOOT */
 
+/* CSS Login */
+
+.boton-home{
+    margin-right: 0.3em;
+}
+
+#login{
+    background-image: url("../images/invierno.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 3em;
+    height: 100vh;
+}
+.cont-login{
+    padding: 5vh;
+    margin-top: 20vh;
+    background-color: #00091a;
+    opacity:0.8;
+    background-size:cover;
+}
+.cont-login h1{
+    text-align: center;
+    color: #ffff00;
+}
+/* FIN Login */
+/* CSS Registro */
+#registro{
+    background-image: url("../images/invierno.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 3em;
+    height: 100vh;
+}
+.cont-reg{
+    padding: 5vh;
+    margin-top: 20vh;
+    background-color: #00091a;
+    opacity:0.8;
+    background-size:cover;
+    text-align: center;
+}
+.cont-reg h1{
+    color: #ffff00;
+}
+.cont-reg a.loginlink{
+    color: #fff;
+    text-decoration: none;
+}
+.cont-reg label{
+    color: #fff;
+}
+/* FIN Registro */
+
+
+/* pagina 404*/
+
+.fondo404{
+    background-image: url("../images/otonyo.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding:3em;
+    height: 100vh;
+}
+
+.texto404{
+    padding-top: 30vh;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: #00091a;
+    opacity:0.8;
+}
+
+
+/*fin 404*/
+
+
+
+/* ----------------------------*/
 /* Cambios en Tablet*/
 
 @media screen and (max-width: 785px) {
@@ -338,6 +427,10 @@ header{
         width:auto;
     }
 
+    .boton-login{
+        margin-top: 0.5em;
+    }
+
     .boton-registro{
         margin-top: 0.5em;
     }
@@ -346,11 +439,6 @@ header{
     #redesSocial{
         display: none;
     }
-
-
-
-
-
 
 
     /*DESTINOS - INICIO */
@@ -364,19 +452,23 @@ header{
     }
 
     /* DESTINOS - FIN */
-
-
+    .mapa{
+        margin-bottom: 2vh;
+    }
+    .formulario{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 
 
 }
 
+/*--------------------------*/
 /*Cambios en MOVIL*/
 
 @media screen and (max-width: 700px) {
 
-
     .wrapper-contacto{
-
         display: none;
     }
 
