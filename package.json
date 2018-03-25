@@ -11,6 +11,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "jbox": "^0.4.8",
+    "mysql": "^2.15.0",
     "nodemon": "^1.17.2"
   },
   "scripts": {

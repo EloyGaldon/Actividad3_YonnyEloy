@@ -277,6 +277,38 @@ header{
 /* CSS para apartado SOMOS */
 
 
+#somos{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/VicenteNadal-W.jpg");
+}
+#quienes_somos{
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 40px;
+    font-weight: bold;
+    padding: 2%;
+    border: 5px solid #000;
+    border-radius: 10px;
+    text-shadow: 1px 1px white;
+}
+hr{
+    width:73%;
+    margin-left: 0px;
+    position: relative;
+    border-color: red;
+    margin-top: -4px;
+
+}
+
+#quienes_somos:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
 
 
 /* CSS - FIN */
@@ -318,7 +350,29 @@ header{
 /* FIN apartado MAPA */
 
 /* FOOTER */
+.linea{
+    border-bottom: 2px solid #fff;
+}
+#final{
+    background-color:#0B0B3B;
+    color:white;
+    text-align: center;
 
+}
+#ayuda{
+    padding-right: 5vh;
+    padding-top: 3vh;
+}
+
+#suscribete{
+    margin-top: 6vh;
+}
+.envia{
+    margin-top: 2vh;
+}
+#redesSocial2{
+    display: none;
+}
 
 
 /* FIN FOOT */
@@ -342,10 +396,15 @@ header{
     background-color: #00091a;
     opacity:0.8;
     background-size:cover;
+    text-align: center;
 }
 .cont-login h1{
     text-align: center;
     color: #ffff00;
+}
+.cont-login a.remenberlink{
+    color: #fff;
+    text-decoration: none;
 }
 /* FIN Login */
 /* CSS Registro */
@@ -439,6 +498,9 @@ header{
     #redesSocial{
         display: none;
     }
+    #redesSocial2{
+        display: initial;
+    }
 
 
     /*DESTINOS - INICIO */
@@ -472,10 +534,22 @@ header{
         display: none;
     }
 
+    #somos{
+        background-color: blue;
+    }
     .viaja{
         color: #ffffff;
         margin-top: 25%;
         margin-left: 15%;
+    }
+    .informacion{
+        display: none;
+     }
+    #ayuda{
+        padding-right: 2vw;
+    }
+    #suscribete{
+        padding-bottom: 2vh;
     }
 
 
